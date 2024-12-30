@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Shelf</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             margin: 0;
@@ -57,12 +58,13 @@
             background-color: #ffc107;
             position: relative;
             height: 8px;
+            overflow: hidden;
         }
 
         .banner h1 {
             margin: 0;
             font-size: 1.2em;
-            color: #333;
+            color: #000000;
             position: relative;
             z-index: 1;
         }
@@ -109,11 +111,12 @@
             width: 100%;
             transform: translateY(-50%);
             text-align: center;
-            font-size: 1.5em;
+            font-size: 1.2em;
             color: rgba(0, 0, 0, 0.1);
             white-space: nowrap;
             overflow: hidden;
             z-index: 0;
+            text-transform: uppercase;
         }
 
         
@@ -187,11 +190,42 @@
         .button-17:disabled {
             box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
         }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 8px; /* Space between logo image and text */
+        }
+
+        .logo img.logo-image {
+            height: 30px; /* Adjust size as needed */
+            width: auto;
+            border-radius: 5px; /* Optional: make it rounded */
+        }
+
+        .icon-container {
+            display: flex;
+            align-items: center;
+            gap: 10px; /* Space between icons */
+        }
+
+        .icon {
+            font-size: 20px; /* Adjust size as needed */
+            cursor: pointer; /* Change cursor to pointer on hover */
+            color: #ffffff; /* Change color to match your design */
+        }
+
+
+
+
     </style>
 </head>
 <body>
     <header>
-        <div class="logo">BIG BOOKSHELF</div>
+        <div class="logo">
+            <img src="logo1.png" alt="Logo" class="logo-image">
+            BIG BOOKSHELF
+        </div>
         <nav>
             <a href="#">Books</a>
             <a href="#">Authors</a>
@@ -199,6 +233,11 @@
             <a href="#">Gift Ideas</a>
             <a href="#">About Us</a>
         </nav>
+        <div class="icon-container">
+            <i class="fas fa-shopping-cart icon"></i>
+            <i class="fas fa-heart icon"></i>
+            <i class="fas fa-search icon"></i>
+        </div>
         <button class="button-17" role="button">Login</button>
     </header>
 
@@ -215,42 +254,42 @@
             <p>The Wealth of Nations</p>
         </div>
         <div class="book-item">
-            <img src="template-1.png" alt="Book Cover">
+            <img src="book-cover-216.jpg" alt="Book Cover">
             <h3>Mikhail Bulgakov</h3>
             <p>Master Margarita</p>
         </div>
         <div class="book-item">
-            <img src="template-1.png" alt="Book Cover">
+            <img src="book-cover-395.jpg" alt="Book Cover">
             <h3>Alex Gilvary</h3>
             <p>From the Memoirs of a Non-Enemy Combatant</p>
         </div>
         <div class="book-item">
-            <img src="template-1.png" alt="Book Cover">
+            <img src="canva-brown-rusty-mystery-novel-book-cover-hG1QhA7BiBU.jpg" alt="Book Cover">
             <h3>Patrick Ness</h3>
             <p>More than This</p>
         </div>
         <div class="book-item">
-            <img src="template-1.png" alt="Book Cover">
+            <img src="dark.jpg" alt="Book Cover">
             <h3>Erik Spiekermann</h3>
             <p>Hello I am Erik</p>
         </div>
         <div class="book-item">
-            <img src="template-1.png" alt="Book Cover">
+            <img src="image001.jpg" alt="Book Cover">
             <h3>Mario Puzo</h3>
             <p>The Godfather</p>
         </div>
         <div class="book-item">
-            <img src="template-1.png" alt="Book Cover">
+            <img src="lost-places.jpg" alt="Book Cover">
             <h3>Don DeLillo</h3>
             <p>The Names</p>
         </div>
         <div class="book-item">
-            <img src="template-1.png" alt="Book Cover">
+            <img src="x190.jpg" alt="Book Cover">
             <h3>Daniel Gargallo</h3>
             <p>She Beyond Sun</p>
         </div>
         <div class="book-item">
-            <img src="template-1.png" alt="Book Cover">
+            <img src="x450.jpg" alt="Book Cover">
             <h3>Alan Trotter</h3>
             <p>Muscle</p>
         </div>
